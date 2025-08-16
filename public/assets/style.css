@@ -1,0 +1,33 @@
+:root { --bg:#0f172a; --card:#111827; --muted:#9ca3af; --acc:#22c55e; --red:#ef4444; --text:#e5e7eb; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto; background:#0b1220; color:var(--text); }
+a { color:#60a5fa; text-decoration:none; }
+.container { max-width:1100px; margin:20px auto; padding:0 16px; }
+.topnav { display:flex; align-items:center; justify-content:space-between; background:#0b1020; padding:12px 16px; border-bottom:1px solid #1f2937; position:sticky; top:0; }
+.topnav .brand a { font-weight:700; color:#a5b4fc; }
+.topnav ul { list-style:none; display:flex; gap:14px; padding:0; margin:0; }
+.topnav .userbox { display:flex; gap:12px; align-items:center; }
+.badge { background:#334155; padding:2px 8px; border-radius:999px; font-size:12px; }
+.btn-link { color:#fca5a5; }
+.auth { display:flex; align-items:center; justify-content:center; min-height:100vh; }
+.auth-card { width:360px; background:#0f172a; padding:24px; border:1px solid #1f2937; border-radius:8px; }
+label { display:block; font-size:14px; color:var(--muted); margin-top:10px; }
+input, select, button { width:100%; padding:10px; margin-top:6px; border-radius:6px; border:1px solid #243145; background:#0b1220; color:var(--text); }
+button { background: linear-gradient(90deg, #22c55e, #16a34a); border:0; cursor:pointer; font-weight:600; }
+button:hover { filter: brightness(1.1); }
+.alert { padding:10px; border-radius:6px; margin:10px 0; font-size:14px; }
+.alert.success { background:#052e1a; border:1px solid #14532d; }
+.alert.error { background:#3b0d0d; border:1px solid #7f1d1d; }
+.grid { display:grid; gap:16px; }
+.grid.two { grid-template-columns: 1fr 1fr; }
+.card { background:#0f172a; padding:16px; border:1px solid #1f2937; border-radius:8px; }
+.big { font-size:28px; font-weight:700; }
+.tbl { width:100%; border-collapse:collapse; }
+.tbl th, .tbl td { border-bottom:1px solid #1f2937; padding:10px; text-align:left; }
+.tabs { display:flex; gap:8px; margin-bottom:14px; }
+.tabs a { padding:8px 12px; border-radius:20px; background:#0f172a; border:1px solid #1f2937; color:#cbd5e1; }
+.tabs a.active { background:#1e293b; color:#fff; border-color:#334155; }
+.footer { text-align:center; padding:16px; color:#94a3b8; border-top:1px solid #1f2937; margin-top:30px; }
+.list { margin:0; padding-left:18px; }
+.danger { color: var(--red); }
+.inline { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
